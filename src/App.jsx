@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { createClient } from "@supabase/supabase-js";
 
 // --- SUPABASE KURULUMU ---
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseUrl = "https://ollzqfylpetmgvjzbagk.supabase.co";
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
