@@ -2,9 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { createClient } from "@supabase/supabase-js";
 
 // --- SUPABASE KURULUMU ---
-const supabaseUrl = "https://ollzqfylpetmgvjzbagk.supabase.co";
-const supabaseAnonKey =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9sbHpxZnlscGV0bWd2anpiYWdrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA2MDE4ODksImV4cCI6MjA2NjE3Nzg4OX0.4PX6IEy5u-lmEe442lkVSdKPC-kR6IVwR0JRfQR0Id0";
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 // --- YARDIMCI BİLEŞENLER ---
